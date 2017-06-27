@@ -46,3 +46,8 @@ the exact url.
 ```
 <NavLink path="/about" activeClassName="myactiveclass">About</NavLink>
 ```
+
+You can also write active styles directly to the ```<NavLink>``` component using the **_activeStyle_** attribute.
+```
+<NavLink exact to="/" activeStyle={{backgroundColor:'tomato'}}</NavLink>
+```
