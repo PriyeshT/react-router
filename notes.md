@@ -13,7 +13,7 @@ You began declaring routes with react router by rendering a router that wraps al
 </BrowserRouter>
 ```
 
-*BrowserRouter and Route*
+**BrowserRouter and Route**
 
 BrowserRouter wraps all of your app's components. So for react-router, you will need a component, which can include all 
 of the other components of your app.
@@ -25,7 +25,7 @@ E.G -- > /about, will render both <Home/> and <About/> components.
 
 To avoid this, we use the 'exact' keyword, to let React know that we want to render the component for '/', only if the path is exactly '/'.
 
-You can also use render attribute for <Route />
+You can also use render attribute for ```<Route />```
 
 render attribute is preferred over to component, because with render you can pass props to the component that we want to render.
 ```
@@ -38,11 +38,11 @@ render attribute is preferred over to component, because with render you can pas
 
 To add navigation support to your app, you can use _NavLink_ or _Link_.
 
-_<Link>_ or _<NavLink>_, are used instead of the <a> tags. While rendering the component, React will automatically render this tags as <a> tags.
-You can specify the path you want to navigate to with *_to_* attribute. Again, like _Route_, here also you can use the *_exact_* keyword to match
+```<Link>``` or ```<NavLink>```, are used instead of the ```<a>``` tags. While rendering the component, React will automatically render this tags as ```<a>``` tags.
+You can specify the path you want to navigate to with **_to_** attribute. Again, like _Route_, here also you can use the **_exact_** keyword to match
 the exact url.
 
-*<NavLink>* adds an *_active_* class to the currently selected link itself. You can write your own styles to this 'active' class. However, if you want to have a custom class name for the active link, you need to use the *_activeClassName_* attribute.
+```<NavLink>``` adds an **_active_** class to the currently selected link itself. You can write your own styles to this 'active' class. However, if you want to have a custom class name for the active link, you need to use the **_activeClassName_** attribute.
 ```
 <NavLink path="/about" activeClassName="myactiveclass">About</NavLink>
 ```
