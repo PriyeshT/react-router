@@ -51,3 +51,10 @@ You can also write active styles directly to the ```<NavLink>``` component using
 ```
 <NavLink exact to="/" activeStyle={{backgroundColor:'tomato'}}</NavLink>
 ```
+
+**Redirect**
+The _Redirect_ component tells the react-router to redirect from one route to another. 
+
+_Redirect_ requires a **_to__* prop and the value should be the url to redirect to.
+
+To avoid issues while dealing with deeply nested routes, use a ```<Route/>``` to **render** a redirect component that will navigate to the new location.
